@@ -1,5 +1,4 @@
 # PyDrive
-Google Drive uploader written in Python
 
 Script to upload a single file to a shared folder in Google Drive, then create an anchorchain.txt file for use with Jenkins
 
