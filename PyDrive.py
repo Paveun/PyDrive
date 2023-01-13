@@ -28,10 +28,9 @@ def get_drive_service():
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
                 credentials_json, SCOPES)
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(port=0, launch_browser=True)
         with open(credentials_pickle, 'wb') as token:
             pickle.dump(creds, token)
-    socket.setdefaulttimeout(300)
     service = build('drive', 'v3', credentials=creds)
     return service
 
