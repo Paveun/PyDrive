@@ -61,7 +61,7 @@ def upload_file_to_shared_drive(file_path, shared_folder_id):
         file_id = response.get('id')
         file_url = f'"https://drive.google.com/u/0/uc?id={file_id}&export=download"'
         print(f"File download link: {file_url}")
-        # Created an anchorchain.txt file for use with the anchorchain plugin in Jenkins
+        # Creates an anchorchain.txt file for use with the anchorchain plugin in Jenkins
         file_url = file_url.replace('"','')
         with open("anchorchain.txt", "w") as f:
             f.write(file_name + "\t" + file_url + "\thttps://cdn-icons-png.flaticon.com/512/2965/2965323.png")
