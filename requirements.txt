@@ -1,0 +1,5 @@
+google_api_python_client==2.72.0
+google_auth_oauthlib==0.8.0
+google-auth-httplib2==0.1.0
+protobuf==4.21.12
+tqdm==4.64.1
